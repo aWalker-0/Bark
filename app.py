@@ -7,9 +7,9 @@ preload_models()
 
 # generate audio from text
 text_prompt = """
-    Fuck... I - I don't know. [laughs] Like'a sentence? [clears throat] I don't know... I am the LORAX and I speak for the trees. But for some reason, the trees speak VIETNAMESE!
+    Hello User. I am DIO, the artificial intelligence paired to you. I have multiple functionalities, all you need do is ask.
 """
-audio_array = generate_audio(text_prompt)
+audio_array = generate_audio(text_prompt, history_prompt="v2/en_speaker_6")
 
 # save audio to disk
 write_wav("bark_generation.wav", SAMPLE_RATE, audio_array)
